@@ -8,3 +8,30 @@
 
 import Foundation
 
+class PokemonDataStore {
+    
+    var PokemonArr = [Pokemon]()
+    
+    func getPokemonObjects(completion:@escaping ([Pokemon]) -> ()) {
+        
+        APIClient.getPokemonData { (jsonPokemonDictionary) in
+            
+            guard let resultsArr = jsonPokemonDictionary["results"] as? Array<Any> else { print("getting results array failed"); return }
+            
+            for item in resultsArr  {
+                guard let item = item as? [String: Any] else { print("item failed"); return }
+                let pokemonObject = Pokemon.init(jsonDictionary: item)
+                print("************************")
+                print(pokemonObject.name!, pokemonObject.url!)
+                print("************************")
+
+                self.PokemonArr.append(pokemonObject)
+                print(self.PokemonArr.count)
+            }
+            completion(self.PokemonArr)
+        }
+        
+        
+    }
+    
+}

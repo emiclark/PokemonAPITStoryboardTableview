@@ -9,15 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let ds = PokemonDataStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        APIClient.getPokemonData { (jsonDictionary) in
-            print("************************")
-            print(jsonDictionary)
-            print("************************")
-
+        ds.getPokemonObjects { (pokemonObjects) in
+            print("*****************")
+            print(pokemonObjects)
         }
     }
 
