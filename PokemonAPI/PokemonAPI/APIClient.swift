@@ -11,7 +11,6 @@ import Foundation
 class APIClient {
     
     class func getPokemonData(completion:@escaping([String: Any])->()) {
-        var jsonDictionary = [String:Any]()
         
         // api string
         let urlString = "http://pokeapi.co/api/v2/pokemon/"
@@ -36,12 +35,9 @@ class APIClient {
             
             // need to guard because of try? conversion to dictionary
             guard let json = jsonDict else { print("json conversion failed"); return }
-            
-            // assign successful json to jsondictionary
-            jsonDictionary = json
-            
+
             // return successful dictionary to calling method
-            completion(jsonDictionary)
+            completion(json)
         }
             task.resume()
     }
