@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		004FF16F205F04EF00405645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FF16E205F04EF00405645 /* AppDelegate.swift */; };
-		004FF171205F04EF00405645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FF170205F04EF00405645 /* ViewController.swift */; };
 		004FF174205F04EF00405645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FF172205F04EF00405645 /* Main.storyboard */; };
 		004FF176205F04EF00405645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004FF175205F04EF00405645 /* Assets.xcassets */; };
 		004FF179205F04EF00405645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FF177205F04EF00405645 /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		004FF16B205F04EF00405645 /* PokemonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004FF16E205F04EF00405645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		004FF170205F04EF00405645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		004FF173205F04EF00405645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		004FF175205F04EF00405645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004FF178205F04EF00405645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				004FF180205F05D000405645 /* APIClient.swift */,
 				004FF184205F10D300405645 /* PokemonDataStore.swift */,
 				004FF186205F10E900405645 /* Pokemon.swift */,
-				004FF170205F04EF00405645 /* ViewController.swift */,
 				004FF172205F04EF00405645 /* Main.storyboard */,
 				004FF18A205F203E00405645 /* myTableViewCell.swift */,
 				004FF188205F1DAE00405645 /* PokemonTableViewController.swift */,
@@ -154,7 +151,6 @@
 				004FF189205F1DAE00405645 /* PokemonTableViewController.swift in Sources */,
 				004FF18B205F203E00405645 /* myTableViewCell.swift in Sources */,
 				004FF187205F10E900405645 /* Pokemon.swift in Sources */,
-				004FF171205F04EF00405645 /* ViewController.swift in Sources */,
 				004FF185205F10D300405645 /* PokemonDataStore.swift in Sources */,
 				004FF16F205F04EF00405645 /* AppDelegate.swift in Sources */,
 				004FF181205F05D000405645 /* APIClient.swift in Sources */,
