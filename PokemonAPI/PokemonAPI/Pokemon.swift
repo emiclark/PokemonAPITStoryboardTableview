@@ -17,7 +17,7 @@ class Pokemon {
         guard let url = jsonDictionary["url"] as? String,
             let name = jsonDictionary["name"] as? String
             else { print("url initialization failed"); return}
-                
+
         self.name = name
         self.url = url
     }

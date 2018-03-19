@@ -16,10 +16,10 @@ class APIClient {
         let urlString = "http://pokeapi.co/api/v2/pokemon/"
         
         // convert string to url
-        let urlconverted = URL(string: urlString)
+        let stringToUrl = URL(string: urlString)
         
-        // guard url - url can be nil
-        guard let url = urlconverted else { print("failed"); return }
+        // use guard since the url can be nil
+        guard let url = stringToUrl else { print("failed"); return }
         
         // create request from successful url
         let request = URLRequest(url: url)
@@ -36,10 +36,10 @@ class APIClient {
             // need to guard because of try? conversion to dictionary
             guard let json = jsonDict else { print("json conversion failed"); return }
 
-            // return successful dictionary to calling method
+            // return json dictionary to calling method after successfully creating the json object
             completion(json)
         }
-            task.resume()
+        task.resume()
     }
     
 }
