@@ -21,12 +21,7 @@ class PokemonDataStore {
             for item in resultsArr  {
                 guard let item = item as? [String: Any] else { print("item failed"); return }
                 let pokemonObject = Pokemon.init(jsonDictionary: item)
-                print("************************")
-                print(pokemonObject.name!, pokemonObject.url!)
-                print("************************")
-
                 self.PokemonArr.append(pokemonObject)
-                print(self.PokemonArr.count)
             }
             completion(self.PokemonArr)
         }
